@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { DataService } from './data.service';
+import { RouterModule, Routes } from '@angular/router';
+import { ProductComponent } from './product/product.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -15,6 +19,7 @@ export class AppComponent {
   
   someProperty:string = '';
   myArr:any = '';
+  
   ngOnInit() {
     this.myArr = this.dataService.cars;
 	
