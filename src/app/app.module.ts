@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DataService } from './data.service';
+import { HttpModule } from '@angular/http';
 
 
 // Declarations
@@ -17,7 +18,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [AppComponent,ProductComponent],
-  imports: [ BrowserModule, RouterModule],
+  imports: [ BrowserModule, HttpModule],
   providers: [DataService],
   exports: [RouterModule],
   bootstrap: [AppComponent]
